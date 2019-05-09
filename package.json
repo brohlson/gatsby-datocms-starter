@@ -19,6 +19,7 @@
     "gatsby-plugin-webpack-size": "^0.0.3",
     "gatsby-source-filesystem": "^2.0.33",
     "gatsby-transformer-sharp": "^2.1.19",
+    "husky": "^2.2.0",
     "prop-types": "^15.7.2",
     "react": "16.7.0-alpha.2",
     "react-dom": "16.7.0-alpha.2",
@@ -56,6 +57,11 @@
     "format": "prettier --config ./.prettierrc --write src/**/*.js",
     "build": "gatsby build",
     "test": "ava **/*.test.js --verbose"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn format"
+    }
   },
   "repository": {
     "type": "git",
