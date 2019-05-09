@@ -1,5 +1,6 @@
 module.exports = {
   siteUrl: 'https://website.com',
-  siteTitle: 'Website Title',
-  siteDescription: 'Website Description',
+  title: 'Website Title',
+  description: 'Website Description',
+  author: '@_chaseohlson',
 };
