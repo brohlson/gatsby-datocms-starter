@@ -1,1 +1,3 @@
-<h1>Gatsby 💅 Starter</h1>;
+#Gatsby 💅 Starter
+
+`gatsby new my-site https://github.com/brohlson/gatsby-starter`
