@@ -1,17 +1,31 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { SiteWrapper } from './Layout.css';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
+import { ThemeProvider } from 'styled-components';
+import { SiteWrapper } from './Layout.css';
+import Reboot from '../../styles/Reboot';
+import Global from '../../styles/Global';
+import Theme from '../../styles/Theme';
 
 const Layout = ({ children }) => {
   return (
     <SiteWrapper>
-      <Header />
-      <Fragment>{children}</Fragment>
-      <Footer />
+      <Reboot />
+      <Global />
+      <ThemeProvider theme={Theme}>
+        <Fragment>
+          <Header />
+          {children}
+          <Footer />
+        </Fragment>
+      </ThemeProvider>
     </SiteWrapper>
   );
+};
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;

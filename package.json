@@ -54,9 +54,7 @@
     "serve": "gatsby serve",
     "ssr": "yarn build && yarn serve",
     "format": "prettier --config ./.prettierrc --write src/**/*.js",
-    "build:dir": "mkdirp ./public/icons/",
-    "build:favicons": "node scripts/favicons",
-    "build": "yarn build:dir && yarn build:favicons && gatsby build",
+    "build": "gatsby build",
     "test": "ava **/*.test.js --verbose"
   },
   "repository": {
