@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import { ThemeProvider } from 'styled-components';
 import { SiteWrapper } from './Layout.css';
 import Reboot from '../../styles/Reboot';

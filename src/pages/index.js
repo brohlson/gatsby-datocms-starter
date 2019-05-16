@@ -1,10 +1,10 @@
 import React from 'react';
 import Layout from '../containers/Layout/Layout';
-import SEO from '../components/seo';
+import SEO from '../components/SEO';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Home" />
     <h1>Home</h1>
   </Layout>
 );
