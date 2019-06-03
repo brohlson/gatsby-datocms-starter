@@ -27,7 +27,7 @@
     "styled-components": "^4.2.0"
   },
   "devDependencies": {
-    "ava": "^0.25.0",
+    "ava": "^2.0.0",
     "babel-eslint": "^10.0.1",
     "chrome-launcher": "^0.10.5",
     "core-js": "^2.6.2",
