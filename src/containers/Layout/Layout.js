@@ -7,6 +7,8 @@ import { SiteWrapper } from './Layout.css';
 import Reboot from '../../styles/Reboot';
 import Global from '../../styles/Global';
 import Theme from '../../styles/Theme';
+import ModalContext from '../../store/modalContext';
+import Modal from '../../components/Modal';
 
 const Layout = ({ children }) => {
   return (
@@ -18,6 +20,12 @@ const Layout = ({ children }) => {
           <Header />
           {children}
           <Footer />
+          {/* Optional: The modal is rendered like this in order to utlize componentDidMount */}
+          <ModalContext.Consumer>
+            {({ open }) => {
+              if (open) return <Modal />;
+            }}
+          </ModalContext.Consumer>
         </Fragment>
       </ThemeProvider>
     </SiteWrapper>
