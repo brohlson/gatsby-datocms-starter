@@ -21,7 +21,7 @@
     "gatsby-transformer-sharp": "^2.1.19",
     "husky": "^2.2.0",
     "prop-types": "^15.7.2",
-    "react": "16.7.0-alpha.2",
+    "react": "16.8.6",
     "react-dom": "16.7.0-alpha.2",
     "react-helmet": "^5.2.1",
     "styled-components": "^4.2.0"
