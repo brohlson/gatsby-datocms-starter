@@ -41,7 +41,7 @@
     "eslint-plugin-react": "^7.12.4",
     "gatsby-plugin-eslint": "^2.0.3",
     "lighthouse": "^4.0.0",
-    "prettier": "^1.17.0"
+    "prettier": "^1.18.2"
   },
   "keywords": [
     "gatsby"
