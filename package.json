@@ -17,7 +17,7 @@
     "gatsby-plugin-sitemap": "^2.1.0",
     "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-plugin-webpack-size": "^0.0.3",
-    "gatsby-source-filesystem": "^2.0.38",
+    "gatsby-source-filesystem": "^2.0.39",
     "gatsby-transformer-sharp": "^2.1.21",
     "husky": "^2.2.0",
     "prop-types": "^15.7.2",
