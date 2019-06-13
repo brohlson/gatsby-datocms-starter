@@ -19,7 +19,7 @@
     "gatsby-plugin-webpack-size": "^0.0.3",
     "gatsby-source-filesystem": "^2.0.39",
     "gatsby-transformer-sharp": "^2.1.21",
-    "husky": "^2.2.0",
+    "husky": "^2.4.1",
     "prop-types": "^15.7.2",
     "react": "16.7.0-alpha.2",
     "react-dom": "16.7.0-alpha.2",
