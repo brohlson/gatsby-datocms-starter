@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
           {/* Optional: The modal is rendered like this in order to utlize componentDidMount */}
           <ModalContext.Consumer>
             {({ open }) => {
-              if (open) return <Modal />;
+              return <Modal open={open} />;
             }}
           </ModalContext.Consumer>
         </Fragment>
