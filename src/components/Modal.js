@@ -1,7 +1,10 @@
 import React, { useMemo } from 'react';
-import ModalContext from '../store/modalContext';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+
+import ModalContext from '../store/modalContext';
+
+import { font } from '../consts/style';
 
 export const ModalWrapper = styled.div`
   position: fixed;
@@ -23,12 +26,17 @@ export const ModalInner = styled.div`
   position: relative;
   max-width: 100%;
   max-height: 100%;
+  height: 250px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ${font.h1};
 `;
 
 const Modal = ({ open }) => {
   const handleLifeCycle = () => {
-    //eslint-disable-next-line
-    console.log('Lifecycle methods?  Fuck yeah.');
+    // Do something
   };
   // Each time open prop changes, run handleLifeCycle()
   useMemo(handleLifeCycle, [open]);
@@ -38,7 +46,7 @@ const Modal = ({ open }) => {
       {({ closeModal }) =>
         open ? (
           <ModalWrapper onClick={closeModal}>
-            <ModalInner>Hello</ModalInner>
+            <ModalInner>hey</ModalInner>
           </ModalWrapper>
         ) : null
       }

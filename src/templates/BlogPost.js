@@ -1,10 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { graphql, useStaticQuery, Link } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 
 import Layout from '../containers/Layout';
 import SEO from '../components/SEO';
-import ModalContext from '../store/modalContext';
 
 import { font, colors } from '../consts/style';
 
@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 const Inner = styled.div`
   width: 700px;
   max-width: 100%;
-  text-align: center;
+  text-align: left;
   pre {
     background: rgba(0, 0, 0, 0.1);
     padding: 2px 4px;
@@ -40,35 +40,17 @@ const Title = styled.h1`
   ${font.h1}
 `;
 
-const IndexPage = () => {
-  const data = useStaticQuery(graphql`
-    query indexQuery {
-      datoCmsHomePage {
-        title
-        seoMetaTags {
-          ...GatsbyDatoCmsSeoMetaTags
-        }
-      }
-    }
-  `);
-
-  const { title, seoMetaTags } = data.datoCmsHomePage;
+const BlogPost = ({ data }) => {
+  const { title, seoMetaTags, content } = data.project;
   return (
     <Layout>
       <SEO meta={seoMetaTags} />
       <Wrapper>
         <Inner>
           <Title>{title}</Title>
-          <pre>
-            gatsby new MY_SITE https://github.com/brohlson/gatsby-starter
-          </pre>
-          <ModalContext.Consumer>
-            {({ openModal }) => {
-              return <button onClick={openModal}>Open Modal</button>;
-            }}
-          </ModalContext.Consumer>
+          <div dangerouslySetInnerHTML={{ __html: content }} />
           <Link to="/blog">
-            <button css={{ marginLeft: '.5em' }}>Blog Page</button>
+            <button>Go Back</button>
           </Link>
         </Inner>
       </Wrapper>
@@ -76,4 +58,20 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export const projectQuery = graphql`
+  query($slug: String!) {
+    project: datoCmsBlogPost(slug: { eq: $slug }) {
+      title
+      seoMetaTags {
+        ...GatsbyDatoCmsSeoMetaTags
+      }
+      content
+    }
+  }
+`;
+
+BlogPost.propTypes = {
+  data: PropTypes.object.isRequired,
+};
+
+export default BlogPost;

@@ -1,4 +1,7 @@
 const siteConfig = require('./config/site-config');
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 module.exports = {
   siteMetadata: {
@@ -10,7 +13,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
-    `gatsby-plugin-react-svg`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -21,13 +23,19 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter`,
+        name: `gatsby-datocms-starter`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#000`,
+        background_color: `#222`,
         theme_color: `#fff`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-source-datocms`,
+      options: {
+        apiToken: process.env.DATO_CMS_KEY,
       },
     },
   ],

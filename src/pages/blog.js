@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { graphql, useStaticQuery, Link } from 'gatsby';
+import { map } from 'lodash';
 
 import Layout from '../containers/Layout';
 import SEO from '../components/SEO';
-import ModalContext from '../store/modalContext';
 
 import { font, colors } from '../consts/style';
 
@@ -13,12 +13,10 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
-  padding: 20px;
 `;
 
 const Inner = styled.div`
-  width: 700px;
+  width: 400px;
   max-width: 100%;
   text-align: center;
   pre {
@@ -32,7 +30,6 @@ const Inner = styled.div`
     border: none;
     color: white;
     padding: 0.35em 0.7em;
-    margin-top: 0.7em;
   }
 `;
 
@@ -40,35 +37,56 @@ const Title = styled.h1`
   ${font.h1}
 `;
 
-const IndexPage = () => {
+const PostLink = styled.div`
+  margin-bottom: 1em;
+  a {
+    color: ${colors.light};
+    background: ${colors.purple};
+    padding: 0.35em 0.7em;
+    font-style: italic;
+    &:hover {
+      text-decoration: none;
+      background: ${colors.dark};
+    }
+  }
+`;
+
+const Blog = () => {
   const data = useStaticQuery(graphql`
-    query indexQuery {
-      datoCmsHomePage {
+    query blogQuery {
+      page: datoCmsBlogPage {
         title
         seoMetaTags {
           ...GatsbyDatoCmsSeoMetaTags
         }
       }
+      posts: allDatoCmsBlogPost(
+        sort: { fields: [meta___createdAt], order: ASC }
+      ) {
+        edges {
+          node {
+            title
+            slug
+          }
+        }
+      }
     }
   `);
-
-  const { title, seoMetaTags } = data.datoCmsHomePage;
+  const { title, seoMetaTags } = data.page;
+  const { edges } = data.posts;
   return (
     <Layout>
       <SEO meta={seoMetaTags} />
       <Wrapper>
         <Inner>
           <Title>{title}</Title>
-          <pre>
-            gatsby new MY_SITE https://github.com/brohlson/gatsby-starter
-          </pre>
-          <ModalContext.Consumer>
-            {({ openModal }) => {
-              return <button onClick={openModal}>Open Modal</button>;
-            }}
-          </ModalContext.Consumer>
-          <Link to="/blog">
-            <button css={{ marginLeft: '.5em' }}>Blog Page</button>
+          {map(edges, post => (
+            <PostLink>
+              <Link to={`/blog/${post.node.slug}/`}>{post.node.title}</Link>
+            </PostLink>
+          ))}
+          <Link to="/">
+            <button css={{ marginLeft: '.5em' }}>Go Home</button>
           </Link>
         </Inner>
       </Wrapper>
@@ -76,4 +94,4 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default Blog;

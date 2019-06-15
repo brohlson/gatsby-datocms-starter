@@ -1,6 +1,6 @@
 module.exports = {
   siteUrl: 'https://website.com',
-  title: 'Website Title',
+  title: 'Gatsby Starter',
   description: 'Website Description',
-  author: '@_chaseohlson',
+  author: '@chaseohlsonweb',
 };

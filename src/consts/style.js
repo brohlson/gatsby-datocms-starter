@@ -9,9 +9,13 @@ const mq = {
 export const font = {
   h1: `
         font-size: 5rem;
+        font-weight: 900;
         @media screen and (max-width: ${mq.tablet}) {
             font-size: 4rem;
         }
+    `,
+  button: `
+        font-weight: 700;
     `,
 };
 
