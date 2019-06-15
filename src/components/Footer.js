@@ -1,5 +1,9 @@
 import React from 'react';
-import { Wrapper } from './Footer.css';
+import styled from 'styled-components';
+
+export const Wrapper = styled.div`
+  display: flex;
+`;
 
 const Footer = () => {
   return (

@@ -1,8 +1,8 @@
 import React from 'react';
-import Layout from '../containers/Layout/Layout';
+import Layout from '../containers/Layout';
 import SEO from '../components/SEO';
 import ModalContext from '../store/modalContext';
-import { font } from '../styles/Consts';
+import { font } from '../consts/style';
 import styled from 'styled-components';
 
 const Title = styled.h1`

@@ -1,12 +1,12 @@
 {
   "name": "gatsby-starter",
   "private": true,
-  "description": "An opinionated Gatsby starter with styled-components",
+  "description": "An opinionated Gatsby starter",
   "version": "1.0.0",
   "author": "Chase Ohlson <chase@chaseohlson.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
-    "gatsby": "^2.9.2",
+    "gatsby": "^2.9.4",
     "gatsby-image": "^2.1.4",
     "gatsby-plugin-google-analytics": "^2.0.21",
     "gatsby-plugin-manifest": "^2.1.1",
@@ -21,15 +21,14 @@
     "gatsby-transformer-sharp": "^2.1.21",
     "husky": "^2.4.1",
     "prop-types": "^15.7.2",
-    "react": "16.7.0-alpha.2",
-    "react-dom": "16.7.0-alpha.2",
+    "react": "16.8.0",
+    "react-dom": "16.8.0",
     "react-helmet": "^5.2.1",
+    "react-intersection-observer": "^8.23.0",
     "styled-components": "^4.3.1"
   },
   "devDependencies": {
-    "ava": "^2.1.0",
     "babel-eslint": "^10.0.1",
-    "chrome-launcher": "^0.10.5",
     "core-js": "^2.6.2",
     "directory-named-webpack-plugin": "^4.0.0",
     "eslint": "^5.12.1",
@@ -53,7 +52,6 @@
     "ssr": "yarn build && yarn serve",
     "format": "prettier --config ./.prettierrc --write src/**/**/*.js && prettier --config ./.prettierrc --write src/**/*.js",
     "build": "gatsby build",
-    "test": "ava **/*.test.js --verbose",
     "clean": "rm -rf ./node_modules && rm -rf ./.cache && yarn"
   },
   "husky": {
