@@ -1,4 +1,4 @@
-![banner][https://i.imgur.com/KDyK3sU.jpg]
+![Banner](https://i.imgur.com/KDyK3sU.jpg "Banner")
 
 # Gatsby DatoCMS Starter
 
