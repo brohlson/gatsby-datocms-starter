@@ -60,7 +60,8 @@ const IndexPage = () => {
         <Inner>
           <Title>{title}</Title>
           <pre>
-            gatsby new MY_SITE https://github.com/brohlson/gatsby-starter
+            gatsby new MY_SITE
+            https://github.com/brohlson/gatsby-datocms-starter
           </pre>
           <ModalContext.Consumer>
             {({ openModal }) => {
