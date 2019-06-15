@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import Img from 'gatsby-image';
 import { graphql, useStaticQuery } from 'gatsby';
 
 import { colors } from '../consts/style';
 import { spin } from '../style/animations';
-import Img from 'gatsby-image';
 
 const Wrapper = styled.div`
   background: ${colors.purple};
