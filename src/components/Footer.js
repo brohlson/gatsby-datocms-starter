@@ -14,6 +14,9 @@ export const Wrapper = styled.div`
     margin-left: 0.5em;
     color: white;
     font-weight: 700;
+    &:hover {
+      color: white;
+    }
   }
 `;
 
