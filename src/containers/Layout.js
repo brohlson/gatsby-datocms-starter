@@ -25,7 +25,6 @@ const Layout = ({ children }) => {
           href="https://rsms.me/inter/inter.css"
         />
       </Helmet>
-      <Font />
       <Reboot />
       <Global />
       <Header />
