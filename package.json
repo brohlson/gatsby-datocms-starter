@@ -19,7 +19,7 @@
     "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-plugin-webpack-size": "^0.0.3",
     "gatsby-source-datocms": "^2.1.9",
-    "gatsby-source-filesystem": "^2.0.39",
+    "gatsby-source-filesystem": "^2.0.40",
     "gatsby-transformer-sharp": "^2.1.21",
     "husky": "^2.4.1",
     "lodash": "^4.17.11",
