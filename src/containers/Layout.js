@@ -5,7 +5,6 @@ import Helmet from 'react-helmet';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Font from '../style/font';
 import Reboot from '../style/reboot';
 import Global from '../style/global';
 import ModalContext from '../store/modalContext';
