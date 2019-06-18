@@ -7,8 +7,8 @@
 ### Installation
 
 - `gatsby new my-site https://github.com/brohlson/gatsby-datocms-starter`
-- Create your .env, .env.production, .env.development files with DATO_CMS_KEY
-- Create the Home, BlogPage, BlogPost models in  DatoCMS, or create your own
+- Create your `.env`, `.env.production`, `.env.development` files with read-only DATO_CMS_KEY
+- Create the `HomePage`, `BlogPage`, `BlogPost` models in  DatoCMS, or create your own
 - Kick some ass 
 
 ### Credits 

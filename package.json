@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter",
+  "name": "gatsby-datocms-starter",
   "private": true,
   "description": "An opinionated Gatsby starter",
   "version": "1.0.0",
@@ -29,12 +29,10 @@
     "react-dom": "16.8.0",
     "react-helmet": "^5.2.1",
     "react-intersection-observer": "^8.23.0",
-    "react-pose": "^4.0.8",
     "styled-components": "^4.3.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.2",
-    "core-js": "^3.1.4",
     "directory-named-webpack-plugin": "^4.0.0",
     "eslint": "^5.12.1",
     "eslint-config-prettier": "^5.0.0",
@@ -44,7 +42,6 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "gatsby-plugin-eslint": "^2.0.3",
-    "lighthouse": "^4.0.0",
     "prettier": "^1.18.2"
   },
   "keywords": [
@@ -66,6 +63,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/brohlson/gatsby-starter"
+    "url": "https://github.com/brohlson/gatsby-datocms-starter"
   }
 }
