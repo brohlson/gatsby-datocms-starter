@@ -5134,12 +5134,12 @@ gatsby-plugin-styled-components@^3.1.0:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-gatsby-plugin-webpack-size@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-webpack-size/-/gatsby-plugin-webpack-size-0.0.3.tgz#5d4dd4740668efa551fb7055a788253ab196ebf0"
-  integrity sha512-+SeXLobugpnDd9ZMKTQqypvUi67XjzJJm4NfNhOsEiRVbOep4TJNWGYzh4smb29/26cT/ZKfg+tdeTYpuB6AXA==
+gatsby-plugin-webpack-size@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-webpack-size/-/gatsby-plugin-webpack-size-1.0.0.tgz#26e3b733b82b70715e6598c7b95cefc96b9986b2"
+  integrity sha512-gq7iQtFa3G2oCZcmGUSOg4WehYWrGVG7VhkkEFLNmipnYynk4038jGrlYQQjMayMwrCFcwoPAzUg5oICj6wpaQ==
   dependencies:
-    size-plugin "^1.0.1"
+    size-plugin "^1.2.0"
 
 gatsby-react-router-scroll@^2.0.7:
   version "2.0.7"
@@ -10404,7 +10404,7 @@ sitemap@^1.12.0:
     underscore "^1.7.0"
     url-join "^1.1.0"
 
-size-plugin@^1.0.1:
+size-plugin@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/size-plugin/-/size-plugin-1.2.0.tgz#7fefcd4c7f2083414f4a7ba1941718db6f709cb4"
   integrity sha512-lgB1vsrDM17fhmUrsS5vP1Tg+R57+AEMhms2B6iBuI3EHWVNQv3TANqixzwDOcMV5azX6DIqOaPu2+6CWw7b3Q==
