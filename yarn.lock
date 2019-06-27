@@ -5201,10 +5201,10 @@ gatsby-react-router-scroll@^2.1.0:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby-source-datocms@^2.1.10:
-  version "2.1.10"
-  resolved "https://registry.yarnpkg.com/gatsby-source-datocms/-/gatsby-source-datocms-2.1.10.tgz#bd7cb008f44f8f941740462de6a5cfaf7e39b41e"
-  integrity sha512-q3OqXR28reXn/0CwVrUBBXoLr+Yaxm8UAPbAW7smLNkQ8fllPz31pQ8XseBmUUTLw2c3N8tTN4ygh72rzSv5sg==
+gatsby-source-datocms@^2.1.11:
+  version "2.1.11"
+  resolved "https://registry.yarnpkg.com/gatsby-source-datocms/-/gatsby-source-datocms-2.1.11.tgz#03392e49443b232c33e7af8372317eb888e701c1"
+  integrity sha512-/QGdRGkxaziEm2901MypEQaTllTk4LhY8zcJYrEq2k2ALYBPd0MwBkujIrNYLflBqvCR9f/RderVWj/IM2z1tg==
   dependencies:
     babel-polyfill "^6.26.0"
     babel-runtime "^6.26.0"
