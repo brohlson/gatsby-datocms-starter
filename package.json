@@ -21,7 +21,7 @@
     "gatsby-source-datocms": "^2.1.10",
     "gatsby-source-filesystem": "^2.1.1",
     "gatsby-transformer-sharp": "^2.2.0",
-    "husky": "^2.6.0",
+    "husky": "^2.7.0",
     "lodash": "^4.17.11",
     "path": "^0.12.7",
     "prop-types": "^15.7.2",
