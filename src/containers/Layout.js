@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Transition from '../components/Transition';
 import Reboot from '../style/reboot';
 import Global from '../style/global';
 import ModalContext from '../store/modalContext';
@@ -28,7 +29,8 @@ const Layout = ({ children }) => {
       <Reboot />
       <Global />
       <Header />
-      {children}
+      <Transition>{children}</Transition>
+
       <Footer />
       <ModalContext.Consumer>
         {({ open }) => {
