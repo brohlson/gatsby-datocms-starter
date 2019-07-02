@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { graphql, Link } from 'gatsby';
 
-import Layout from '../containers/Layout';
 import SEO from '../components/SEO';
 
 import { font, colors } from '../consts/style';
@@ -43,7 +42,7 @@ const Title = styled.h1`
 const BlogPost = ({ data }) => {
   const { title, seoMetaTags, content } = data.project;
   return (
-    <Layout>
+    <Fragment>
       <SEO meta={seoMetaTags} />
       <Wrapper>
         <Inner>
@@ -54,7 +53,7 @@ const BlogPost = ({ data }) => {
           </Link>
         </Inner>
       </Wrapper>
-    </Layout>
+    </Fragment>
   );
 };
 

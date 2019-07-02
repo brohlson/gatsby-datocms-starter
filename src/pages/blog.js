@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import { map } from 'lodash';
 
-import Layout from '../containers/Layout';
 import SEO from '../components/SEO';
 
 import { font, colors } from '../consts/style';
@@ -75,7 +74,7 @@ const Blog = () => {
   const { title, seoMetaTags } = data.page;
   const { edges } = data.posts;
   return (
-    <Layout>
+    <Fragment>
       <SEO meta={seoMetaTags} />
       <Wrapper>
         <Inner>
@@ -90,7 +89,7 @@ const Blog = () => {
           </Link>
         </Inner>
       </Wrapper>
-    </Layout>
+    </Fragment>
   );
 };
 

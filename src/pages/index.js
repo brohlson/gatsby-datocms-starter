@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 
-import Layout from '../containers/Layout';
 import SEO from '../components/SEO';
 import ModalContext from '../store/modalContext';
 
@@ -54,7 +53,7 @@ const IndexPage = () => {
 
   const { title, seoMetaTags } = data.datoCmsHomePage;
   return (
-    <Layout>
+    <Fragment>
       <SEO meta={seoMetaTags} />
       <Wrapper>
         <Inner>
@@ -68,12 +67,12 @@ const IndexPage = () => {
               return <button onClick={openModal}>Open Modal</button>;
             }}
           </ModalContext.Consumer>
-          <Link to="/blog">
+          <Link fade to="/blog">
             <button css={{ marginLeft: '.5em' }}>Blog Page</button>
           </Link>
         </Inner>
       </Wrapper>
-    </Layout>
+    </Fragment>
   );
 };
 

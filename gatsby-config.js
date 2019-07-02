@@ -20,6 +20,12 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-webpack-size`,
     {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/containers/Layout.js`),
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
