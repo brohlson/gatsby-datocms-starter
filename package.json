@@ -20,7 +20,7 @@
     "gatsby-plugin-styled-components": "^3.1.0",
     "gatsby-plugin-transition-link": "^1.12.4",
     "gatsby-plugin-webpack-size": "^1.0.0",
-    "gatsby-source-datocms": "^2.1.12",
+    "gatsby-source-datocms": "^2.1.13",
     "gatsby-source-filesystem": "^2.1.1",
     "gatsby-transformer-sharp": "^2.2.0",
     "gsap": "^2.1.3",
