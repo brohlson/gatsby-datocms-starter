@@ -1,10 +1,11 @@
 import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 
 import ModalContext from '../store/modalContext';
 
-import { font } from '../consts/style';
+import { font, duration } from '../consts/style';
 
 export const ModalWrapper = styled.div`
   position: fixed;
@@ -46,7 +47,9 @@ const Modal = ({ open }) => {
       {({ closeModal }) =>
         open ? (
           <ModalWrapper onClick={closeModal}>
-            <ModalInner>hey</ModalInner>
+            <Fade down duration={duration}>
+              <ModalInner>hey</ModalInner>
+            </Fade>
           </ModalWrapper>
         ) : null
       }

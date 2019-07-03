@@ -24,3 +24,5 @@ export const colors = {
   light: '#fafafa',
   purple: '#9135AD',
 };
+
+export const duration = 500;
