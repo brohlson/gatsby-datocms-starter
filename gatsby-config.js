@@ -20,11 +20,17 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-webpack-size`,
     {
-      resolve: `gatsby-plugin-layout`,
+      resolve: `gatsby-plugin-transition-link`,
       options: {
-        component: require.resolve(`./src/containers/Layout.js`),
+        layout: require.resolve(`./src/containers/Layout.js`),
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-layout`,
+    //   options: {
+    //     component: require.resolve(`./src/containers/Layout.js`),
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
-import { graphql, useStaticQuery, Link } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 import SEO from '../components/SEO';
 import ModalContext from '../store/modalContext';
@@ -67,9 +68,9 @@ const IndexPage = () => {
               return <button onClick={openModal}>Open Modal</button>;
             }}
           </ModalContext.Consumer>
-          <Link fade to="/blog">
+          <AniLink duration={1} paintDrip to="/blog" hex={colors.purple}>
             <button css={{ marginLeft: '.5em' }}>Blog Page</button>
-          </Link>
+          </AniLink>
         </Inner>
       </Wrapper>
     </Fragment>
