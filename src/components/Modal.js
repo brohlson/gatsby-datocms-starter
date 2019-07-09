@@ -1,11 +1,10 @@
-import React, { useMemo } from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Fade from 'react-reveal/Fade';
 
 import ModalContext from '../store/modalContext';
 
-import { font, duration } from '../consts/style';
+import { font } from '../consts/style';
 
 export const ModalWrapper = styled.div`
   position: fixed;
@@ -38,18 +37,17 @@ export const ModalInner = styled.div`
 const Modal = ({ open }) => {
   const handleLifeCycle = () => {
     // Do something
+    console.log('do something');
   };
   // Each time open prop changes, run handleLifeCycle()
-  useMemo(handleLifeCycle, [open]);
+  useEffect(handleLifeCycle, [open]);
 
   return (
     <ModalContext.Consumer>
       {({ closeModal }) =>
         open ? (
           <ModalWrapper onClick={closeModal}>
-            <Fade down duration={duration}>
-              <ModalInner>hey</ModalInner>
-            </Fade>
+            <ModalInner>hey</ModalInner>
           </ModalWrapper>
         ) : null
       }

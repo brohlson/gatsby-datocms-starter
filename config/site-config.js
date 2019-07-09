@@ -1,6 +1,7 @@
 module.exports = {
-  siteUrl: 'https://website.com',
-  title: 'Gatsby Starter',
+  siteUrl: 'https://gatsby-datocms-starter.netlify.com',
+  sitemapPath: '/sitemap.xml',
+  title: 'Gatsby DatoCMS Starter',
   description: 'Website Description',
   author: '@chaseohlsonweb',
 };

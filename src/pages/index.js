@@ -1,12 +1,11 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import { graphql, useStaticQuery, Link } from 'gatsby';
-import Fade from 'react-reveal/Fade';
 
 import SEO from '../components/SEO';
 import ModalContext from '../store/modalContext';
 
-import { font, colors, duration } from '../consts/style';
+import { font, colors } from '../consts/style';
 
 const Wrapper = styled.div`
   height: calc(100vh - 100px);
@@ -57,24 +56,20 @@ const IndexPage = () => {
     <Fragment>
       <SEO meta={seoMetaTags} />
       <Wrapper>
-        <Fade up duration={duration}>
-          <Inner>
-            <Fade up cascade duration={duration}>
-              <Title>{title}</Title>
-            </Fade>
-            <pre>
-              gatsby new SITE https://github.com/brohlson/gatsby-datocms-starter
-            </pre>
-            <ModalContext.Consumer>
-              {({ openModal }) => {
-                return <button onClick={openModal}>Open Modal</button>;
-              }}
-            </ModalContext.Consumer>
-            <Link to="/blog">
-              <button css={{ marginLeft: '.5em' }}>Blog Page</button>
-            </Link>
-          </Inner>
-        </Fade>
+        <Inner>
+          <Title>{title}</Title>
+          <pre>
+            gatsby new SITE https://github.com/brohlson/gatsby-datocms-starter
+          </pre>
+          <ModalContext.Consumer>
+            {({ openModal }) => {
+              return <button onClick={openModal}>Open Modal</button>;
+            }}
+          </ModalContext.Consumer>
+          <Link to="/blog">
+            <button css={{ marginLeft: '.5em' }}>Blog Page</button>
+          </Link>
+        </Inner>
       </Wrapper>
     </Fragment>
   );

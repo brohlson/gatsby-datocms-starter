@@ -2,11 +2,10 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { graphql, Link } from 'gatsby';
-import Fade from 'react-reveal/Fade';
 
 import SEO from '../components/SEO';
 
-import { font, colors, duration } from '../consts/style';
+import { font, colors } from '../consts/style';
 
 const Wrapper = styled.div`
   height: calc(100vh - 100px);
@@ -46,15 +45,13 @@ const BlogPost = ({ data }) => {
     <Fragment>
       <SEO meta={seoMetaTags} />
       <Wrapper>
-        <Fade left duration={duration}>
-          <Inner>
-            <Title>{title}</Title>
-            <div dangerouslySetInnerHTML={{ __html: content }} />
-            <Link to="/blog">
-              <button>Go Back</button>
-            </Link>
-          </Inner>
-        </Fade>
+        <Inner>
+          <Title>{title}</Title>
+          <div dangerouslySetInnerHTML={{ __html: content }} />
+          <Link to="/blog">
+            <button>Go Back</button>
+          </Link>
+        </Inner>
       </Wrapper>
     </Fragment>
   );

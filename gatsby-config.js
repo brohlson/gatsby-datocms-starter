@@ -9,21 +9,40 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-webpack-size`,
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         displayName: process.env.NODE_ENV !== 'production',
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-webpack-size`,
-    // {
-    //   resolve: `gatsby-plugin-transition-link`,
-    //   options: {
-    //     layout: require.resolve(`./src/containers/Layout.js`),
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: siteConfig.sitemapPath,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: siteConfig.siteUrl,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: siteConfig.siteUrl,
+        sitemap: `${siteConfig.siteUrl}${siteConfig.sitemapPath}`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GA_ID,
+      },
+    },
     {
       resolve: `gatsby-plugin-layout`,
       options: {

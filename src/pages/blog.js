@@ -2,11 +2,10 @@ import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import { map } from 'lodash';
-import Fade from 'react-reveal/Fade';
 
 import SEO from '../components/SEO';
 
-import { font, colors, duration } from '../consts/style';
+import { font, colors } from '../consts/style';
 
 const Wrapper = styled.div`
   height: calc(100vh - 100px);
@@ -65,6 +64,7 @@ const Blog = () => {
       ) {
         edges {
           node {
+            id
             title
             slug
           }
@@ -78,19 +78,17 @@ const Blog = () => {
     <Fragment>
       <SEO meta={seoMetaTags} />
       <Wrapper>
-        <Fade right unmountOnExit duration={duration}>
-          <Inner>
-            <Title>{title}</Title>
-            {map(edges, post => (
-              <PostLink>
-                <Link to={`/blog/${post.node.slug}/`}>{post.node.title}</Link>
-              </PostLink>
-            ))}
-            <Link to="/">
-              <button css={{ marginLeft: '.5em' }}>Go Home</button>
-            </Link>
-          </Inner>
-        </Fade>
+        <Inner>
+          <Title>{title}</Title>
+          {map(edges, post => (
+            <PostLink key={post.node.slug}>
+              <Link to={`/blog/${post.node.slug}/`}>{post.node.title}</Link>
+            </PostLink>
+          ))}
+          <Link to="/">
+            <button css={{ marginLeft: '.5em' }}>Go Home</button>
+          </Link>
+        </Inner>
       </Wrapper>
     </Fragment>
   );
