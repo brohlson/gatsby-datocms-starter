@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Helmet from 'react-helmet';
 
+import Transition from '../components/Transition';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Reboot from '../style/reboot';
@@ -15,7 +16,7 @@ const SiteWrapper = styled.div`
   background: ${colors.light};
 `;
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   return (
     <SiteWrapper>
       <Helmet>
@@ -28,7 +29,7 @@ const Layout = ({ children }) => {
       <Reboot />
       <Global />
       <Header />
-      {children}
+      <Transition location={location}>{children}</Transition>
       <Footer />
       <ModalContext.Consumer>
         {({ open }) => {
@@ -41,6 +42,7 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  location: PropTypes.object,
 };
 
 export default Layout;
