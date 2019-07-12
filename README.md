@@ -15,4 +15,4 @@
 - Kick some ass 
 
 ### Credits 
-- [Inter Font](https://rsms.me/inter/) by Rasmus Andersson
+- [Inter Font](https://rsms.me/inter/) by Rasmus Andersson & [typeface-inter package](https://github.com/ajmalafif/typeface-inter) by Ajmal Afif
