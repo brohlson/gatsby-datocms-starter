@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Helmet from 'react-helmet';
 
 import Transition from '../components/Transition';
 import Header from '../components/Header';
@@ -19,13 +18,6 @@ const SiteWrapper = styled.div`
 const Layout = ({ children, location }) => {
   return (
     <SiteWrapper>
-      <Helmet>
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="https://rsms.me/inter/inter.css"
-        />
-      </Helmet>
       <Reboot />
       <Global />
       <Header />

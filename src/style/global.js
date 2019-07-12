@@ -1,3 +1,4 @@
+import 'typeface-inter';
 import { createGlobalStyle } from 'styled-components';
 
 const Global = createGlobalStyle`

@@ -31,7 +31,8 @@
     "react-helmet": "^5.2.1",
     "react-intersection-observer": "^8.23.0",
     "react-transition-group": "^4.2.1",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.3.2",
+    "typeface-inter": "^3.7.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.2",
