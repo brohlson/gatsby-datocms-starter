@@ -36,7 +36,7 @@ export const ModalInner = styled.div`
 
 const Modal = ({ open }) => {
   const handleLifeCycle = () => {
-    // Do something
+    // eslint-disable-next-line
     console.log('do something');
   };
   // Each time open prop changes, run handleLifeCycle()

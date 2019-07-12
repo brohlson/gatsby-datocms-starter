@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import { map } from 'lodash';
@@ -6,6 +6,7 @@ import { map } from 'lodash';
 import SEO from '../components/SEO';
 
 import { font, colors } from '../consts/style';
+import { ScaleUp } from '../style/motion';
 
 const Wrapper = styled.div`
   height: calc(100vh - 100px);
@@ -75,7 +76,7 @@ const Blog = () => {
   const { title, seoMetaTags } = data.page;
   const { edges } = data.posts;
   return (
-    <Fragment>
+    <ScaleUp>
       <SEO meta={seoMetaTags} />
       <Wrapper>
         <Inner>
@@ -90,7 +91,7 @@ const Blog = () => {
           </Link>
         </Inner>
       </Wrapper>
-    </Fragment>
+    </ScaleUp>
   );
 };
 
