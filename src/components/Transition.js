@@ -18,15 +18,11 @@ const getTransitionStyles = {
     opacity: 0,
   },
   entered: {
-    transition: `opacity ${timeout}ms ease, top ${timeout}ms ease`,
-    position: 'relative',
+    transition: `opacity ${timeout}ms ease`,
     opacity: 1,
-    top: '0',
   },
   exiting: {
-    transition: `opacity ${timeout}ms ease, top ${timeout}ms ease`,
-    position: 'relative',
-    top: '30px',
+    transition: `opacity ${timeout}ms ease`,
     opacity: 0,
   },
 };

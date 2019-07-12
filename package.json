@@ -56,7 +56,7 @@
     "dev": "gatsby develop",
     "serve": "gatsby serve",
     "ssr": "yarn build && yarn serve",
-    "format": "prettier --config ./.prettierrc --write src/**/**/*.js && prettier --config ./.prettierrc --write src/**/*.js",
+    "format": "./node_modules/.bin/eslint --ignore-path .gitignore . --fix && prettier --config ./.prettierrc --write src/**/**/*.js && prettier --config ./.prettierrc --write src/**/*.js",
     "build": "gatsby build",
     "clean": "rm -rf ./node_modules && rm -rf ./.cache && yarn cache clean && yarn"
   },
