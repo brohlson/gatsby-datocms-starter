@@ -9,7 +9,8 @@
 ### Installation
 
 - `gatsby new my-site https://github.com/brohlson/gatsby-datocms-starter`
-- Create your `.env`, `.env.production`, `.env.development` files with read-only DATO_CMS_KEY
+- Create your `.env`, `.env.production`, `.env.development` files with read-only `DATO_CMS_KEY` + `GA_ID` for Google Analytics
+- Add your `siteUrl` and `sitemapPath` in `config` to enable canonical URLs, robots.txt & sitemap generation. 
 - Create the `HomePage`, `BlogPage`, `BlogPost` models in  DatoCMS, or create your own
 - Kick some ass 
 
