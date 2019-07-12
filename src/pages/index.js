@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 
@@ -6,6 +6,7 @@ import SEO from '../components/SEO';
 import ModalContext from '../store/modalContext';
 
 import { font, colors } from '../consts/style';
+import { ScaleUp } from '../style/motion';
 
 const Wrapper = styled.div`
   height: calc(100vh - 100px);
@@ -53,7 +54,7 @@ const IndexPage = () => {
 
   const { title, seoMetaTags } = data.datoCmsHomePage;
   return (
-    <Fragment>
+    <ScaleUp>
       <SEO meta={seoMetaTags} />
       <Wrapper>
         <Inner>
@@ -71,7 +72,7 @@ const IndexPage = () => {
           </Link>
         </Inner>
       </Wrapper>
-    </Fragment>
+    </ScaleUp>
   );
 };
 
