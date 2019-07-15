@@ -4908,10 +4908,10 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framer-motion@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-1.2.2.tgz#15572bd70ea1e41ab2cf79c08c46b95249a7e85d"
-  integrity sha512-tpxlE3e2WoBUZshDxYREBnpUc0Nlc0D8uuyzweV9fp/p+13xkoeggzZiyOr1bhnUp36AzNHetXvynnjXh9D5tw==
+framer-motion@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-1.2.3.tgz#ddb6c8fe86c52fc141a68597b65627ae279e6b33"
+  integrity sha512-g1xNW2r/EYusSbI2A3u6VTXeNsajr42NsO3QBJPFb1qg8FDvCMViBjdqdkJlAznKLUAIf5Gsmdb75X9gGP448g==
   dependencies:
     "@popmotion/easing" "^1.0.2"
     "@popmotion/popcorn" "^0.4.1"
@@ -11555,15 +11555,10 @@ ts-pnp@^1.1.2:
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.1.2.tgz#be8e4bfce5d00f0f58e0666a82260c34a57af552"
   integrity sha512-f5Knjh7XCyRIzoC/z1Su1yLLRrPrFCgtUAh/9fCSP6NKbATwpOL1+idQVXQokK9GRFURn/jYPGPfegIctwunoA==
 
-tslib@^1.10.0:
+tslib@^1.10.0, tslib@^1.6.0, tslib@^1.9.0:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
   integrity sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
-
-tslib@^1.6.0, tslib@^1.9.0:
-  version "1.9.3"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
-  integrity sha512-4krF8scpejhaOgqzBEcGM7yDIEfi0/8+8zDRZhNZZ2kjmHJ4hv3zCbQWxoJGz1iw5U0Jl0nma13xzHXcncMavQ==
 
 tty-browserify@0.0.0:
   version "0.0.0"
