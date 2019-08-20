@@ -5,13 +5,15 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6fa40240-03dc-4966-9286-7667ceb79dc4/deploy-status)](https://app.netlify.com/sites/gatsby-datocms-starter/deploys)
 [![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
 
+### Vendors
+- DatoCMS: Includes setup for `HomePage`, `BlogPage`, `BlogPost` models 
+- Netlify: Includes build scripts & setup for a simple contact form function/endpoint
 
 ### Installation
-
 - `gatsby new my-site https://github.com/brohlson/gatsby-datocms-starter`
-- Create your `.env`, `.env.production`, `.env.development` files with read-only `DATO_CMS_KEY` + `GA_ID` for Google Analytics
-- Add your `siteUrl` and `sitemapPath` in `config` to enable canonical URLs, robots.txt & sitemap generation. 
-- Create the `HomePage`, `BlogPage`, `BlogPost` models in  DatoCMS, or create your own
+- Create `.env`, `.env.production`, `.env.development` files based on `.env.example`
+- Add `siteUrl` and `sitemapPath` in `sitec-config` for SEO utils
+- Create the `HomePage`, `BlogPage`, `BlogPost` models in  DatoCMS
 - Kick some ass 
 
 ### Credits 
