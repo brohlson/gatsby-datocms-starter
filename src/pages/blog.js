@@ -1,87 +1,48 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { Fragment } from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
-import { map } from 'lodash';
+import _map from 'lodash/map';
 
 import SEO from '../components/SEO';
+import {
+  PageWrapper,
+  PageInner,
+  PageTitle,
+  PostLink,
+} from '../components/Elements';
 
-import { font, colors } from '../consts/style';
-import { ScaleUp } from '../style/motion';
-
-const Wrapper = styled.div`
-  height: calc(100vh - 100px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const Inner = styled.div`
-  width: 400px;
-  max-width: 100%;
-  text-align: center;
-  pre {
-    background: rgba(0, 0, 0, 0.1);
-    padding: 2px 4px;
-    font-size: 1.2rem;
-  }
-  button {
-    ${font.button};
-    background: ${colors.dark};
-    border: none;
-    color: white;
-    padding: 0.35em 0.7em;
-  }
-`;
-
-const Title = styled.h1`
-  ${font.h1}
-`;
-
-const PostLink = styled.div`
-  margin-bottom: 1em;
-  a {
-    color: ${colors.light};
-    background: ${colors.purple};
-    padding: 0.35em 0.7em;
-    font-style: italic;
-    &:hover {
-      text-decoration: none;
-      background: ${colors.dark};
+const blogQuery = graphql`
+  {
+    page: datoCmsBlogPage {
+      title
+      seoMetaTags {
+        ...GatsbyDatoCmsSeoMetaTags
+      }
+    }
+    posts: allDatoCmsBlogPost(
+      sort: { fields: [meta___createdAt], order: ASC }
+    ) {
+      edges {
+        node {
+          id
+          title
+          slug
+        }
+      }
     }
   }
 `;
 
 const Blog = () => {
-  const data = useStaticQuery(graphql`
-    query blogQuery {
-      page: datoCmsBlogPage {
-        title
-        seoMetaTags {
-          ...GatsbyDatoCmsSeoMetaTags
-        }
-      }
-      posts: allDatoCmsBlogPost(
-        sort: { fields: [meta___createdAt], order: ASC }
-      ) {
-        edges {
-          node {
-            id
-            title
-            slug
-          }
-        }
-      }
-    }
-  `);
+  const data = useStaticQuery(blogQuery);
   const { title, seoMetaTags } = data.page;
   const { edges } = data.posts;
   return (
-    <ScaleUp>
+    <Fragment>
       <SEO meta={seoMetaTags} />
-      <Wrapper>
-        <Inner>
-          <Title>{title}</Title>
-          {map(edges, post => (
+      <PageWrapper>
+        <PageInner>
+          <PageTitle>{title}</PageTitle>
+          {_map(edges, post => (
             <PostLink key={post.node.slug}>
               <Link to={`/blog/${post.node.slug}/`}>{post.node.title}</Link>
             </PostLink>
@@ -89,9 +50,9 @@ const Blog = () => {
           <Link to="/">
             <button css={{ marginLeft: '.5em' }}>Go Home</button>
           </Link>
-        </Inner>
-      </Wrapper>
-    </ScaleUp>
+        </PageInner>
+      </PageWrapper>
+    </Fragment>
   );
 };
 

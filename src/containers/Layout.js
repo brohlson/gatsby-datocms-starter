@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import Transition from '../components/Transition';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Reboot from '../style/reboot';
@@ -15,13 +14,13 @@ const SiteWrapper = styled.div`
   background: ${colors.light};
 `;
 
-const Layout = ({ children, location }) => {
+const Layout = ({ children }) => {
   return (
     <SiteWrapper>
       <Reboot />
       <Global />
       <Header />
-      <Transition location={location}>{children}</Transition>
+      {children}
       <Footer />
       <ModalContext.Consumer>
         {({ open }) => {

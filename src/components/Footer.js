@@ -5,7 +5,7 @@ import { colors } from '../consts/style';
 
 export const Wrapper = styled.div`
   display: flex;
-  height: 40px;
+  height: 4rem;
   color: white;
   background: ${colors.purple};
   justify-content: center;

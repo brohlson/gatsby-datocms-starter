@@ -17,7 +17,7 @@ export const ModalWrapper = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 2000;
-  padding: 20px;
+  padding: 2rem;
 `;
 
 export const ModalInner = styled.div`
@@ -26,8 +26,8 @@ export const ModalInner = styled.div`
   position: relative;
   max-width: 100%;
   max-height: 100%;
-  height: 250px;
-  width: 300px;
+  height: 25rem;
+  width: 30rem;
   display: flex;
   justify-content: center;
   align-items: center;

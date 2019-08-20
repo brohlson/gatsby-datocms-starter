@@ -202,8 +202,8 @@ button {
 }
 
 button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: .1rem dotted;
+  outline: .5rem auto -webkit-focus-ring-color;
 }
 
 input,
@@ -300,7 +300,7 @@ progress {
 }
 
 [type="search"] {
-  outline-offset: -2px;
+  outline-offset: -.2rem;
   -webkit-appearance: none;
 }
 

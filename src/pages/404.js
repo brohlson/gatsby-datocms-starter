@@ -7,7 +7,7 @@ import SEO from '../components/SEO';
 const Wrapper = styled.div`
   padding: 6rem 0;
   text-align: center;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 10rem);
 `;
 
 const NotFoundPage = () => (

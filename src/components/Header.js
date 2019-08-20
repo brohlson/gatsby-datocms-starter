@@ -8,14 +8,14 @@ import { spin } from '../style/animations';
 
 const Wrapper = styled.div`
   background: ${colors.purple};
-  height: 60px;
+  height: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
 const Image = styled(Img)`
-  width: 40px;
+  width: 4rem;
   margin: auto;
   animation: ${spin} 10s linear infinite;
 `;
