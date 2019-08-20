@@ -60,6 +60,9 @@ typings/
 .cache/
 public
 
+# netlify lambda functions
+functions/
+
 # Mac files
 .DS_Store
 
