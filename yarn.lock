@@ -933,10 +933,10 @@
     "@babel/plugin-transform-react-jsx-self" "^7.0.0"
     "@babel/plugin-transform-react-jsx-source" "^7.0.0"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1":
-  version "7.5.3"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.5.3.tgz#ad06e9d28539426fc20869f0b3d9ed6c21bed909"
-  integrity sha512-09kHrO2Y0JWybW20qnt+UMlNTj7NUQByP6ubyq50Yj1QCDhbHfEmWk/uso+SaEi5XKNEWYVKbBgdiZisIaBPmw==
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1", "@babel/runtime@^7.5.5":
+  version "7.5.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.5.5.tgz#74fba56d35efbeca444091c7850ccd494fd2f132"
+  integrity sha512-28QvEGyQyNkB0/m2B4FU7IEZGK2NUrcMtT6BZEFALTguLk+AUT6ofsHtPk5QyjAdUkpMJ+/Em+quwz4HOt30AQ==
   dependencies:
     regenerator-runtime "^0.13.2"
 
@@ -5819,15 +5819,15 @@ gatsby-plugin-sharp@^2.2.13:
     sharp "^0.22.1"
     svgo "^1.2.0"
 
-gatsby-plugin-sitemap@^2.2.7:
-  version "2.2.7"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-2.2.7.tgz#20ce1b5dc26e525e9812559b6db29f962fac1352"
-  integrity sha512-Re8AEa7ZaTMuUEQJlIVbxw0svyCzSGBkH7DWIE0ig6IT1nSeIKb9Ugz+mQKn77IRlRjmK28ElwUeXE8FvbBgyA==
+gatsby-plugin-sitemap@^2.2.10:
+  version "2.2.10"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-2.2.10.tgz#cf399f5e3f42e50ce36b54e0994ec916fd7f5237"
+  integrity sha512-2ND6gEv8P8fBfNKdkv2T51ria6tkCTCBGjrG8zOl60a+OhIJJQANZijIFKaFz/1j+nv+C7h5uxHmvJKf03C0/Q==
   dependencies:
-    "@babel/runtime" "^7.0.0"
+    "@babel/runtime" "^7.5.5"
     minimatch "^3.0.4"
     pify "^3.0.0"
-    sitemap "^1.12.0"
+    sitemap "^1.13.0"
 
 gatsby-plugin-styled-components@^3.1.2:
   version "3.1.2"
@@ -11484,7 +11484,7 @@ sisteransi@^1.0.0:
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.0.tgz#77d9622ff909080f1c19e5f4a1df0c1b0a27b88c"
   integrity sha512-N+z4pHB4AmUv0SjveWRd6q1Nj5w62m5jodv+GD8lvmbY/83T/rpbJGZOnK5T149OldDj4Db07BSv9xY4K6NTPQ==
 
-sitemap@^1.12.0:
+sitemap@^1.13.0:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/sitemap/-/sitemap-1.13.0.tgz#569cbe2180202926a62a266cd3de09c9ceb43f83"
   integrity sha1-Vpy+IYAgKSamKiZs094Jyc60P4M=
