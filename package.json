@@ -22,7 +22,7 @@
     "gatsby-source-datocms": "^2.1.15",
     "gatsby-source-filesystem": "^2.1.21",
     "gatsby-transformer-sharp": "^2.2.13",
-    "http-proxy-middleware": "^0.19.1",
+    "http-proxy-middleware": "^0.20.0",
     "lodash": "^4.17.15",
     "mailgun-js": "^0.22.0",
     "netlify-lambda": "^1.6.2",
