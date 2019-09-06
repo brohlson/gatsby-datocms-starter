@@ -9,7 +9,7 @@
     "dotenv": "^8.1.0",
     "gatsby": "^2.15.8",
     "gatsby-image": "^2.2.17",
-    "gatsby-plugin-canonical-urls": "^2.1.4",
+    "gatsby-plugin-canonical-urls": "^2.1.6",
     "gatsby-plugin-google-analytics": "^2.1.14",
     "gatsby-plugin-layout": "^1.1.4",
     "gatsby-plugin-manifest": "^2.2.14",
