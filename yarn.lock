@@ -882,14 +882,7 @@
     "@babel/plugin-transform-react-jsx-self" "^7.0.0"
     "@babel/plugin-transform-react-jsx-source" "^7.0.0"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1":
-  version "7.5.3"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.5.3.tgz#ad06e9d28539426fc20869f0b3d9ed6c21bed909"
-  integrity sha512-09kHrO2Y0JWybW20qnt+UMlNTj7NUQByP6ubyq50Yj1QCDhbHfEmWk/uso+SaEi5XKNEWYVKbBgdiZisIaBPmw==
-  dependencies:
-    regenerator-runtime "^0.13.2"
-
-"@babel/runtime@^7.5.5":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1", "@babel/runtime@^7.5.5":
   version "7.5.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.5.5.tgz#74fba56d35efbeca444091c7850ccd494fd2f132"
   integrity sha512-28QvEGyQyNkB0/m2B4FU7IEZGK2NUrcMtT6BZEFALTguLk+AUT6ofsHtPk5QyjAdUkpMJ+/Em+quwz4HOt30AQ==
@@ -5914,12 +5907,12 @@ gatsby-plugin-google-analytics@^2.1.14:
   dependencies:
     "@babel/runtime" "^7.5.5"
 
-gatsby-plugin-layout@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-1.1.4.tgz#1c1b65776d5a3d9f2a76b21db4a4f4530ce68c79"
-  integrity sha512-ADjwyO7SH6INLTd/WI35cLuLZHMiDLgDUlGcYI9dpVnVzha41DQJ+8UWcddBaBoaWb8BuJHpnWuBG2iBDhCOvw==
+gatsby-plugin-layout@^1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-1.1.6.tgz#c90bc4a8cc3f167dc16d29413c8b1876eba9a355"
+  integrity sha512-j/M93IH6wTvqGb2jMy3COAbw2IpuxrG2mZbF+C7XGNpfDDQPslgSum3dij/Aoej/XGzdtJ4jvEW6Rn8nNZfvBA==
   dependencies:
-    "@babel/runtime" "^7.0.0"
+    "@babel/runtime" "^7.5.5"
 
 gatsby-plugin-manifest@^2.2.14:
   version "2.2.14"
