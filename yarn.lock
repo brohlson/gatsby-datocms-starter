@@ -882,14 +882,7 @@
     "@babel/plugin-transform-react-jsx-self" "^7.0.0"
     "@babel/plugin-transform-react-jsx-source" "^7.0.0"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1":
-  version "7.5.3"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.5.3.tgz#ad06e9d28539426fc20869f0b3d9ed6c21bed909"
-  integrity sha512-09kHrO2Y0JWybW20qnt+UMlNTj7NUQByP6ubyq50Yj1QCDhbHfEmWk/uso+SaEi5XKNEWYVKbBgdiZisIaBPmw==
-  dependencies:
-    regenerator-runtime "^0.13.2"
-
-"@babel/runtime@^7.5.5":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1", "@babel/runtime@^7.5.5":
   version "7.5.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.5.5.tgz#74fba56d35efbeca444091c7850ccd494fd2f132"
   integrity sha512-28QvEGyQyNkB0/m2B4FU7IEZGK2NUrcMtT6BZEFALTguLk+AUT6ofsHtPk5QyjAdUkpMJ+/Em+quwz4HOt30AQ==
@@ -5993,12 +5986,12 @@ gatsby-plugin-sitemap@^2.2.10:
     pify "^3.0.0"
     sitemap "^1.13.0"
 
-gatsby-plugin-styled-components@^3.1.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.1.2.tgz#1f8ab130e2fdc02fbc8b158b237e7f620d15c2a9"
-  integrity sha512-9MjGXl5ddN2L7jKlSjrobtxbR1gIIpBOmFcfkmNPdL/7rMUkWR6bLmAQ6fUPGCIwTLyvYsNjBZhtAwhUY+NTBw==
+gatsby-plugin-styled-components@^3.1.4:
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.1.4.tgz#331a89ff197d75d48cb45c7289bf6960516fa588"
+  integrity sha512-6k4wjA61a76KCDPHZaYXxYiPXXXQ5ec4/UUvOVDbj+xbGQnpeunQ19au+QygIk4DmsMiwkf4VDvbRhuYuTCXqg==
   dependencies:
-    "@babel/runtime" "^7.0.0"
+    "@babel/runtime" "^7.5.5"
 
 gatsby-plugin-webpack-size@^1.0.0:
   version "1.0.0"
