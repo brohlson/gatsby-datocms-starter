@@ -5768,10 +5768,10 @@ gatsby-cli@^2.7.47:
     ink "^2.3.0"
     ink-spinner "^3.0.1"
 
-gatsby-core-utils@^1.0.7, gatsby-core-utils@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.0.8.tgz#e765a1338d65ff1de65238c7f0a9967e07da20fa"
-  integrity sha512-080Jl8NamTbCGliKxXpMjEO1XUYU5FAow+VPR/j6hJk+Kl/gFmpE1mqa5QnHRGLZQhBP/h2T0mUwnSJn9m/Jsw==
+gatsby-core-utils@^1.0.10, gatsby-core-utils@^1.0.7, gatsby-core-utils@^1.0.8:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.0.10.tgz#f4309a8439e36b3e833c00b1903f381148df4c1b"
+  integrity sha512-AeOrwjF4LiAHAqvrUkAFtvZHkLpKtF2gnIS/nezHDzIMq0SaZLHbdQiJcesyzZ6CcerjLIDWbD6MqxrTt6KkhA==
 
 gatsby-graphiql-explorer@^0.2.14:
   version "0.2.14"
@@ -5838,13 +5838,13 @@ gatsby-plugin-layout@^1.1.6:
   dependencies:
     "@babel/runtime" "^7.5.5"
 
-gatsby-plugin-manifest@^2.2.14:
-  version "2.2.14"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.14.tgz#414d8eb774f6a2a2da264295330b93e6ee91c758"
-  integrity sha512-4GOyQIVMU+9VMQebXF6F+2TCXyWYe3tmBXEH4HEsdqdz0VEx4ZRsLJYfVl+OHOEFThOfSgkqsISv7NheWwk5KQ==
+gatsby-plugin-manifest@^2.2.18:
+  version "2.2.18"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.18.tgz#96bea26e35a8d74ebb74dff8c5c1ae85e7b0c556"
+  integrity sha512-velK1ApsQ/mEUABwmduMHVZISll4q9bJMtW1tOp+qbNUfJUFl2u4x6Ya36z8mxROX0mIKPAhYMAfhWq209rbcg==
   dependencies:
-    "@babel/runtime" "^7.5.5"
-    gatsby-core-utils "^1.0.7"
+    "@babel/runtime" "^7.6.0"
+    gatsby-core-utils "^1.0.10"
     semver "^5.7.1"
     sharp "^0.23.0"
 
