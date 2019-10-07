@@ -19,7 +19,7 @@
     "gatsby-plugin-sitemap": "^2.2.16",
     "gatsby-plugin-styled-components": "^3.1.4",
     "gatsby-plugin-webpack-size": "^1.0.0",
-    "gatsby-source-datocms": "^2.1.15",
+    "gatsby-source-datocms": "^2.1.17",
     "gatsby-source-filesystem": "^2.1.21",
     "gatsby-transformer-sharp": "^2.2.20",
     "http-proxy-middleware": "^0.20.0",
