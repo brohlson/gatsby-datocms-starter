@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -15,6 +15,7 @@ const SiteWrapper = styled.div`
 `;
 
 const Layout = ({ children }) => {
+  const { open } = useContext(ModalContext);
   return (
     <SiteWrapper>
       <Reboot />
@@ -22,11 +23,7 @@ const Layout = ({ children }) => {
       <Header />
       {children}
       <Footer />
-      <ModalContext.Consumer>
-        {({ open }) => {
-          return <Modal open={open} />;
-        }}
-      </ModalContext.Consumer>
+      {open && <Modal />}
     </SiteWrapper>
   );
 };
