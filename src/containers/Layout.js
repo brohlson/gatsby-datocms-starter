@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import Reboot from '../style/reboot';
 import Global from '../style/global';
 import ModalContext from '../store/modalContext';
-import Modal from '../components/Modal';
+import Modals from '../modals';
 import { colors } from '../consts/style';
 
 const SiteWrapper = styled.div`
@@ -16,14 +16,20 @@ const SiteWrapper = styled.div`
 
 const Layout = ({ children }) => {
   const { open } = useContext(ModalContext);
+
+  function renderModal() {
+    if (!open) return null;
+    const ModalComponent = Modals[open];
+    return <ModalComponent />;
+  }
   return (
     <SiteWrapper>
       <Reboot />
       <Global />
       <Header />
       {children}
+      {renderModal()}
       <Footer />
-      {open && <Modal />}
     </SiteWrapper>
   );
 };

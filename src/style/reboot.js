@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import { colors } from '../consts/style';
 
 //****** Contains Reboot.css ******/
 // https://github.com/twbs/bootstrap/blob/v4-dev/dist/css/bootstrap-reboot.css
@@ -17,7 +16,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  color: ${colors.dark};
+  color: black;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -31,7 +30,6 @@ body {
   font-weight: 400;
   line-height: 1.5;
   text-align: left;
-  background-color: ${colors.light};
 }
 
 [tabindex="-1"]:focus {

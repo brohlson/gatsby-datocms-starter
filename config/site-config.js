@@ -3,5 +3,5 @@ module.exports = {
   sitemapPath: '/sitemap.xml',
   title: 'Gatsby DatoCMS Starter',
   description: 'Website Description',
-  author: '@chaseohlsonweb',
+  author: '@chase_ohlson',
 };

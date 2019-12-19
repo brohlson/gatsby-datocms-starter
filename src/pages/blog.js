@@ -32,7 +32,7 @@ const blogQuery = graphql`
   }
 `;
 
-const Blog = () => {
+export default function Blog() {
   const data = useStaticQuery(blogQuery);
   const { title, seoMetaTags } = data.page;
   const { edges } = data.posts;
@@ -43,7 +43,7 @@ const Blog = () => {
         <PageInner>
           <PageTitle>{title}</PageTitle>
           {_map(edges, post => (
-            <PostLink key={post.node.slug}>
+            <PostLink key={post.node.id}>
               <Link to={`/blog/${post.node.slug}/`}>{post.node.title}</Link>
             </PostLink>
           ))}
@@ -54,6 +54,4 @@ const Blog = () => {
       </PageWrapper>
     </Fragment>
   );
-};
-
-export default Blog;
+}

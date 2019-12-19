@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import { providerTypes } from '../types/propTypes';
 
 const defaultState = {
-  open: false,
+  open: null,
 };
 
 const ModalContext = React.createContext(defaultState);
 
 const ModalProvider = ({ children }) => {
   const [open, setOpen] = useState(defaultState.open);
-  const closeModal = () => setOpen(false);
-  const openModal = () => setOpen(true);
+  const closeModal = () => setOpen(null);
+  const openModal = m => setOpen(m);
 
   return (
     <ModalContext.Provider
@@ -25,9 +25,7 @@ const ModalProvider = ({ children }) => {
   );
 };
 
-ModalProvider.propTypes = {
-  children: PropTypes.node.isRequired,
-};
+ModalProvider.propTypes = providerTypes;
 
 export default ModalContext;
 

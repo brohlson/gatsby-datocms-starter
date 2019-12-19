@@ -17,7 +17,7 @@ exports.createPages = async ({ graphql, actions }) => {
       `).then(res => {
         const posts = res.data.allDatoCmsBlogPost.nodes;
         posts.map(post => {
-          let { slug } = post;
+          const { slug } = post;
           createPage({
             path: `/blog/${slug}`,
             component: path.resolve('./src/templates/BlogPost.js'),

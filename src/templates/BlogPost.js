@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
 import { graphql, Link } from 'gatsby';
 
-import SEO from '../components/SEO';
 import { PageWrapper, PageInner, PageTitle } from '../components/Elements';
+import { blogPostTypes } from '../types/propTypes';
+import SEO from '../components/SEO';
 
 const BlogPost = ({ data }) => {
   const { title, seoMetaTags, content } = data.project;
@@ -35,8 +35,6 @@ export const projectQuery = graphql`
   }
 `;
 
-BlogPost.propTypes = {
-  data: PropTypes.object.isRequired,
-};
+BlogPost.propTypes = blogPostTypes;
 
 export default BlogPost;

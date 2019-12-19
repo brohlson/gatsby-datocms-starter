@@ -20,18 +20,20 @@ const Image = styled(Img)`
   animation: ${spin} 10s linear infinite;
 `;
 
-const Header = () => {
-  const data = useStaticQuery(graphql`
-    query HeaderQuery {
-      logo: file(relativePath: { eq: "logo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 40) {
-            ...GatsbyImageSharpFluid
-          }
+const headerQuery = graphql`
+  {
+    logo: file(relativePath: { eq: "logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 40) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
-  `);
+  }
+`;
+
+const Header = () => {
+  const data = useStaticQuery(headerQuery);
   return (
     <Wrapper>
       <Image fluid={data.logo.childImageSharp.fluid} />

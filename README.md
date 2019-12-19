@@ -12,8 +12,8 @@
 ### Installation
 - `gatsby new my-site https://github.com/brohlson/gatsby-datocms-starter`
 - Create `.env`, `.env.production`, `.env.development` files based on `.env.example`
-- Add `siteUrl` and `sitemapPath` in `sitec-config` for SEO utils
-- Create the `HomePage`, `BlogPage`, `BlogPost` models in  DatoCMS
+- Add `siteUrl` and `sitemapPath` in `site-config` for SEO utils
+- Create the `Home Page`, `Blog Page`, `Blog Post` models in  DatoCMS
 - Kick some ass 
 
 ### Credits 

@@ -1,13 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { HelmetDatoCms } from 'gatsby-source-datocms';
+
+import { seoTypes } from '../types/propTypes';
 
 const SEO = ({ meta }) => {
   return <HelmetDatoCms seo={meta} />;
 };
 
-SEO.propTypes = {
-  meta: PropTypes.object.isRequired,
-};
+SEO.propTypes = seoTypes;
 
 export default SEO;
