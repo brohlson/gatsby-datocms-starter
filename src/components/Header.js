@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
 import { graphql, useStaticQuery } from 'gatsby';
 
 import { colors } from '../consts/style';
 import { spin } from '../style/animations';
+import { headerTypes } from '../types/propTypes';
 
 const Wrapper = styled.div`
   background: ${colors.purple};
@@ -32,13 +33,20 @@ const headerQuery = graphql`
   }
 `;
 
-const Header = () => {
+export default function Header({ location }) {
   const data = useStaticQuery(headerQuery);
+
+  /**
+   * Oftentimes we'll have different UI state
+   * based on the router location.  Do it here.
+   */
+  useEffect(() => console.log(location), [location]);
+
   return (
     <Wrapper>
       <Image fluid={data.logo.childImageSharp.fluid} />
     </Wrapper>
   );
-};
+}
 
-export default Header;
+Header.propTypes = headerTypes;

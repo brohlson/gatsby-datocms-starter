@@ -11,3 +11,12 @@ export const seoTypes = {
 export const blogPostTypes = {
   data: PropTypes.object.isRequired,
 };
+
+export const layoutTypes = {
+  children: PropTypes.node.isRequired,
+  location: PropTypes.object.isRequired,
+};
+
+export const headerTypes = {
+  location: PropTypes.object.isRequired,
+};

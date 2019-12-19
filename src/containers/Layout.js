@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import Header from '../components/Header';
@@ -9,12 +8,13 @@ import Global from '../style/global';
 import ModalContext from '../store/modalContext';
 import Modals from '../modals';
 import { colors } from '../consts/style';
+import { layoutTypes } from '../types/propTypes';
 
 const SiteWrapper = styled.div`
   background: ${colors.light};
 `;
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   const { open } = useContext(ModalContext);
 
   function renderModal() {
@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
     <SiteWrapper>
       <Reboot />
       <Global />
-      <Header />
+      <Header location={location} />
       {children}
       {renderModal()}
       <Footer />
@@ -34,9 +34,6 @@ const Layout = ({ children }) => {
   );
 };
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-  location: PropTypes.object,
-};
+Layout.propTypes = layoutTypes;
 
 export default Layout;
