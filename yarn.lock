@@ -1357,14 +1357,7 @@
     "@babel/plugin-transform-react-jsx-self" "^7.7.4"
     "@babel/plugin-transform-react-jsx-source" "^7.7.4"
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2":
-  version "7.7.2"
-  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.7.2.tgz#111a78002a5c25fc8e3361bedc9529c696b85a6a"
-  integrity sha512-JONRbXbTXc9WQE2mAZd1p0Z3DZ/6vaQIkgYMSTP3KjRCyd7rCZCcfhCyX+YjwcKxcZ82UrxbRD358bpExNgrjw==
-  dependencies:
-    regenerator-runtime "^0.13.2"
-
-"@babel/runtime@^7.7.6":
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.6":
   version "7.7.7"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.7.7.tgz#194769ca8d6d7790ec23605af9ee3e42a0aa79cf"
   integrity sha512-uCnC2JEVAu8AKB5do1WRIsvrdJ0flYx/A/9f/6chdacnEZ7LmavjdsDXr5ksYBegxtuTPR5Va9/+13QF/kFkCA==
@@ -2876,12 +2869,7 @@ blob@0.0.5:
   resolved "https://registry.npmjs.org/blob/-/blob-0.0.5.tgz#d680eeef25f8cd91ad533f5b01eed48e64caf683"
   integrity sha512-gaqbzQPqOoamawKg0LGVd7SzLgXS+JH61oWprSLH+P+abTczqJbhTR8CmJ2u9/bUYNmHTGJx/UEmn6doAvvuig==
 
-bluebird@^3.5.5, bluebird@^3.7.1:
-  version "3.7.1"
-  resolved "https://registry.npmjs.org/bluebird/-/bluebird-3.7.1.tgz#df70e302b471d7473489acf26a93d63b53f874de"
-  integrity sha512-DdmyoGCleJnkbp3nkbxTLJ18rjDsE4yCggEwKNXkeV123sPNfOCYeDoeuOY+F2FrSjO1YXcTU+dsy96KMy+gcg==
-
-bluebird@^3.7.2:
+bluebird@^3.5.5, bluebird@^3.7.1, bluebird@^3.7.2:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
   integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
@@ -6568,18 +6556,18 @@ gatsby-telemetry@^1.1.45:
     stack-utils "1.0.2"
     uuid "3.3.3"
 
-gatsby-transformer-sharp@^2.2.20:
-  version "2.3.4"
-  resolved "https://registry.npmjs.org/gatsby-transformer-sharp/-/gatsby-transformer-sharp-2.3.4.tgz#7ab04112983212a3e3a41342495b4900a3980ddb"
-  integrity sha512-TTCCB4vjvrl20Au4yRN9bJqdLqnc8d0Fb+Gsobmf7yhVNJC+eodBdp2ji6mO0JJTwN/JvZk3SJBE2Aa1i8Ezrg==
+gatsby-transformer-sharp@^2.3.12:
+  version "2.3.12"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-2.3.12.tgz#089650dc75d6f133d53a7403e76f6b37060a287f"
+  integrity sha512-Ot/BHucuuF7DuL58fHqvLbN1THw0f1NSY/SGpdjqOzPDDYMs4JUZbaj9iQFoaXLUD76Ubbcng6WxTeE4zLf2pA==
   dependencies:
-    "@babel/runtime" "^7.7.2"
-    bluebird "^3.7.1"
+    "@babel/runtime" "^7.7.6"
+    bluebird "^3.7.2"
     fs-extra "^8.1.0"
     potrace "^2.1.2"
     probe-image-size "^4.1.1"
     semver "^5.7.1"
-    sharp "^0.23.2"
+    sharp "^0.23.4"
 
 gatsby@^2.18.15:
   version "2.18.15"
@@ -10924,7 +10912,7 @@ potrace@^2.1.2:
   dependencies:
     jimp "^0.6.4"
 
-prebuild-install@^5.3.2:
+prebuild-install@^5.3.3:
   version "5.3.3"
   resolved "https://registry.npmjs.org/prebuild-install/-/prebuild-install-5.3.3.tgz#ef4052baac60d465f5ba6bf003c9c1de79b9da8e"
   integrity sha512-GV+nsUXuPW2p8Zy7SarF/2W/oiK8bFQgJcncoJ0d7kRpekEA0ftChjfEaF9/Y+QJEc/wFR7RAEa8lYByuUIe2g==
@@ -12192,16 +12180,16 @@ shallowequal@^1.0.1, shallowequal@^1.1.0:
   resolved "https://registry.npmjs.org/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
   integrity sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==
 
-sharp@^0.23.2:
-  version "0.23.2"
-  resolved "https://registry.npmjs.org/sharp/-/sharp-0.23.2.tgz#5f8b77513aa1f7e4d0dd969a3904ced75486c1d7"
-  integrity sha512-BSo0tq6Jtzwa6GDKvVMNNPCP/HLczrFLGVcorYv7OtxlKx4UPHy7x9DdfT8F+PK7FCFDemVRwtsjWpvaJI9v6w==
+sharp@^0.23.2, sharp@^0.23.4:
+  version "0.23.4"
+  resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.23.4.tgz#ca36067cb6ff7067fa6c77b01651cb9a890f8eb3"
+  integrity sha512-fJMagt6cT0UDy9XCsgyLi0eiwWWhQRxbwGmqQT6sY8Av4s0SVsT/deg8fobBQCTDU5iXRgz0rAeXoE2LBZ8g+Q==
   dependencies:
     color "^3.1.2"
     detect-libc "^1.0.3"
     nan "^2.14.0"
     npmlog "^4.1.2"
-    prebuild-install "^5.3.2"
+    prebuild-install "^5.3.3"
     semver "^6.3.0"
     simple-get "^3.1.0"
     tar "^5.0.5"
