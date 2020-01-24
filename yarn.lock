@@ -13446,10 +13446,10 @@ typedarray@^0.0.6:
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-inter@^3.7.0:
-  version "3.10.0"
-  resolved "https://registry.npmjs.org/typeface-inter/-/typeface-inter-3.10.0.tgz#04a55d62e2dc3f60db3afab5d8a547e067692bc6"
-  integrity sha512-WuXE+TaJLB8pdMuvIVY3LfT5UQqndR8+Js0xfhNpdXlsEx0Abwd1bzg4w4YWl2eoOmmLYrRpx6UJJ7a7/q6wZQ==
+typeface-inter@^3.11.2:
+  version "3.11.2"
+  resolved "https://registry.yarnpkg.com/typeface-inter/-/typeface-inter-3.11.2.tgz#a7217d355d734391334bfdffdeb24e19f1cbb110"
+  integrity sha512-VXaLh0Nls33e4NQL2t8knITg+ummMKEZKaEZ7AOpClE7AdZOk4TE9YnK/KwAL5LZPuVbhdJTdItTMzhJ4uLLmA==
 
 ua-parser-js@^0.7.18:
   version "0.7.20"
