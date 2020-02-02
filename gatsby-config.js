@@ -14,6 +14,12 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-webpack-size',
     {
+      resolve: 'gatsby-plugin-anchor-links',
+      options: {
+        offset: -90,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-styled-components',
       options: {
         displayName: process.env.NODE_ENV !== 'production',
