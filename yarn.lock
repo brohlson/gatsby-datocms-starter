@@ -1357,14 +1357,7 @@
     "@babel/plugin-transform-react-jsx-self" "^7.7.4"
     "@babel/plugin-transform-react-jsx-source" "^7.7.4"
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2":
-  version "7.7.2"
-  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.7.2.tgz#111a78002a5c25fc8e3361bedc9529c696b85a6a"
-  integrity sha512-JONRbXbTXc9WQE2mAZd1p0Z3DZ/6vaQIkgYMSTP3KjRCyd7rCZCcfhCyX+YjwcKxcZ82UrxbRD358bpExNgrjw==
-  dependencies:
-    regenerator-runtime "^0.13.2"
-
-"@babel/runtime@^7.7.6":
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.6":
   version "7.7.7"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.7.7.tgz#194769ca8d6d7790ec23605af9ee3e42a0aa79cf"
   integrity sha512-uCnC2JEVAu8AKB5do1WRIsvrdJ0flYx/A/9f/6chdacnEZ7LmavjdsDXr5ksYBegxtuTPR5Va9/+13QF/kFkCA==
@@ -2880,12 +2873,7 @@ blob@0.0.5:
   resolved "https://registry.npmjs.org/blob/-/blob-0.0.5.tgz#d680eeef25f8cd91ad533f5b01eed48e64caf683"
   integrity sha512-gaqbzQPqOoamawKg0LGVd7SzLgXS+JH61oWprSLH+P+abTczqJbhTR8CmJ2u9/bUYNmHTGJx/UEmn6doAvvuig==
 
-bluebird@^3.5.5:
-  version "3.7.1"
-  resolved "https://registry.npmjs.org/bluebird/-/bluebird-3.7.1.tgz#df70e302b471d7473489acf26a93d63b53f874de"
-  integrity sha512-DdmyoGCleJnkbp3nkbxTLJ18rjDsE4yCggEwKNXkeV123sPNfOCYeDoeuOY+F2FrSjO1YXcTU+dsy96KMy+gcg==
-
-bluebird@^3.7.2:
+bluebird@^3.5.5, bluebird@^3.7.2:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
   integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
@@ -6374,15 +6362,7 @@ gatsby-cli@^2.8.29:
     ink "^2.6.0"
     ink-spinner "^3.0.1"
 
-gatsby-core-utils@^1.0.26:
-  version "1.0.26"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.0.26.tgz#e1cbdfad498d58d677d9d74f21a1ede661b49d6f"
-  integrity sha512-NPflmXmyTcg3x2mp6cqp/51QeAHRKepfbf0X4erDsnVlewFJuGTe+25ZJvWkkwU2g1cPAxuwzlPe0jOL92iU4A==
-  dependencies:
-    ci-info "2.0.0"
-    node-object-hash "^2.0.0"
-
-gatsby-core-utils@^1.0.28:
+gatsby-core-utils@^1.0.26, gatsby-core-utils@^1.0.28:
   version "1.0.28"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.0.28.tgz#aa66e49cdcc1892e7817a32fdd806cf5e16ea309"
   integrity sha512-XWKR9Rk2v6iQkmBsTLCdI3adyC9PCh1s5BQ85nlGitlgcVVQq98jZlQdcy0v9mJOrTuce0uf5RqkeGDWFLekoA==
@@ -6500,16 +6480,16 @@ gatsby-plugin-robots-txt@^1.5.0:
     "@babel/runtime" "^7.5.1"
     generate-robotstxt "^7.1.0"
 
-gatsby-plugin-sharp@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.4.0.tgz#9df4c2646a34fb7ea4ff5428f6662ef3c0a80cde"
-  integrity sha512-PmifXRuy0R16uoWPIMvjHgoPdkG30uUS9r+XYAp+WW4Q7oWy1q0R2tia3rcdwvGeOsxX98W95jy8QTqhQ3BDFQ==
+gatsby-plugin-sharp@^2.4.5:
+  version "2.4.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.4.5.tgz#9c05a426f43546c61936b773b1844d920eac1252"
+  integrity sha512-O2FZcUd78aKNR7Hbommrbc5igW32U2MnenA/Oc55sklFUF+I1fu4N6zMoHfh7sVtWCqZEbQiNO310Zl8jstD5g==
   dependencies:
     "@babel/runtime" "^7.7.6"
     async "^2.6.3"
     bluebird "^3.7.2"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.0.26"
+    gatsby-core-utils "^1.0.28"
     got "^8.3.2"
     imagemin "^6.1.0"
     imagemin-mozjpeg "^8.0.0"
@@ -11467,13 +11447,6 @@ react-hot-loader@^4.12.18:
     shallowequal "^1.1.0"
     source-map "^0.7.3"
 
-react-intersection-observer@^8.25.2:
-  version "8.25.2"
-  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-8.25.2.tgz#be165f4827dc8f1927ab68ecb837efe913d94909"
-  integrity sha512-KymKTOQK0TxQFW/Km80oS8VVOZAX8nt74fsYEGw6pqBLSJlqBXEhdFpyPcBa08GiGnup8lrFRkSY4JioP+pqww==
-  dependencies:
-    tiny-invariant "^1.0.6"
-
 react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.12.0"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
@@ -13356,11 +13329,6 @@ timsort@^0.3.0:
   version "0.3.0"
   resolved "https://registry.npmjs.org/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
   integrity sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
-
-tiny-invariant@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.npmjs.org/tiny-invariant/-/tiny-invariant-1.0.6.tgz#b3f9b38835e36a41c843a3b0907a5a7b3755de73"
-  integrity sha512-FOyLWWVjG+aC0UqG76V53yAWdXfH8bO6FNmyZOuUrzDzK8DI3/JRY25UD7+g49JWM1LXwymsKERB+DzI0dTEQA==
 
 tinycolor2@^1.4.1:
   version "1.4.1"
