@@ -12,7 +12,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    'gatsby-plugin-webpack-size',
     {
       resolve: 'gatsby-plugin-anchor-links',
       options: {
