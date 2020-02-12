@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import OutsideClickHandler from 'react-outside-click-handler';
 
 import ModalContext from '../store/modalContext';
 import { ModalInner, ModalWrapper } from '../components/Elements';
@@ -6,8 +7,10 @@ import { ModalInner, ModalWrapper } from '../components/Elements';
 export default function Basic() {
   const { closeModal } = useContext(ModalContext);
   return (
-    <ModalWrapper onClick={closeModal}>
-      <ModalInner>hey</ModalInner>
+    <ModalWrapper>
+      <OutsideClickHandler onOutsideClick={closeModal}>
+        <ModalInner>hey</ModalInner>
+      </OutsideClickHandler>
     </ModalWrapper>
   );
 }
