@@ -6563,10 +6563,10 @@ gatsby-page-utils@^0.0.39:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-anchor-links@^1.0.11:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-anchor-links/-/gatsby-plugin-anchor-links-1.0.11.tgz#e49d1863c10264985ceda0f1a8165385d0b6aa52"
-  integrity sha512-UK3mHDv3sv1Mr5+rvNca4n84C1Io+R/0OtshBcbHW165XDVTd3IL4cgI96X3zXWZVZi4wKPA+XqK8Ss7Moahew==
+gatsby-plugin-anchor-links@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-anchor-links/-/gatsby-plugin-anchor-links-1.1.0.tgz#8d844dcad5f02472395c0c0215182d4a09c66af7"
+  integrity sha512-aCfDHyGo7PDZycEqOzyD3MvfldgWzySxLZ4EkmBR3saPPKKFa/JZkuZeOEmVOSMTQiESTOQ5fZRuJkHmjb0Yzg==
   dependencies:
     scroll-to-element "^2.0.3"
 
