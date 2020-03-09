@@ -1411,14 +1411,7 @@
     "@babel/plugin-transform-react-jsx-self" "^7.7.4"
     "@babel/plugin-transform-react-jsx-source" "^7.7.4"
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2":
-  version "7.7.2"
-  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.7.2.tgz#111a78002a5c25fc8e3361bedc9529c696b85a6a"
-  integrity sha512-JONRbXbTXc9WQE2mAZd1p0Z3DZ/6vaQIkgYMSTP3KjRCyd7rCZCcfhCyX+YjwcKxcZ82UrxbRD358bpExNgrjw==
-  dependencies:
-    regenerator-runtime "^0.13.2"
-
-"@babel/runtime@^7.7.6":
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.6":
   version "7.7.7"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.7.7.tgz#194769ca8d6d7790ec23605af9ee3e42a0aa79cf"
   integrity sha512-uCnC2JEVAu8AKB5do1WRIsvrdJ0flYx/A/9f/6chdacnEZ7LmavjdsDXr5ksYBegxtuTPR5Va9/+13QF/kFkCA==
@@ -6516,12 +6509,13 @@ gatsby-cli@^2.8.29:
     ink "^2.6.0"
     ink-spinner "^3.0.1"
 
-gatsby-core-utils@^1.0.28:
-  version "1.0.28"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.0.28.tgz#aa66e49cdcc1892e7817a32fdd806cf5e16ea309"
-  integrity sha512-XWKR9Rk2v6iQkmBsTLCdI3adyC9PCh1s5BQ85nlGitlgcVVQq98jZlQdcy0v9mJOrTuce0uf5RqkeGDWFLekoA==
+gatsby-core-utils@^1.0.28, gatsby-core-utils@^1.0.30:
+  version "1.0.30"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.0.30.tgz#c2b61017405b01e2f34f2c57117b4716c75e010f"
+  integrity sha512-+WYFxf9dT4u67vecXdROe9iF2jzPKoTVbWI3FYLCcNANY2Y/vEec11vhG5FnBHdLpgmD3cnLPdhCAileKWBldA==
   dependencies:
     ci-info "2.0.0"
+    configstore "^5.0.0"
     node-object-hash "^2.0.0"
 
 gatsby-graphiql-explorer@^0.2.33:
@@ -6596,13 +6590,13 @@ gatsby-plugin-layout@^1.1.22:
   dependencies:
     "@babel/runtime" "^7.7.6"
 
-gatsby-plugin-manifest@^2.2.41:
-  version "2.2.41"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.41.tgz#c6952e466b163145b74aa071822a97a797a68e01"
-  integrity sha512-eKbnpDSLbGUzmnfE65uLit/J8XS4LYslyRHtqMhTja6JcdzjXVWFsO9043tqUXfL8+JBw5PccCxZM8BIN23+Vw==
+gatsby-plugin-manifest@^2.2.44:
+  version "2.2.44"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.44.tgz#1902972d14144ff7b071f13aab3cd9a25d265b30"
+  integrity sha512-Mhq7sXAiFZG0xL8RFqLYEZK9/RBVtn2ubIiIWA5jS4PRfxSx8szvmAbu7H7VvOJTvh/ArGKUbGPEQ0mbJmX1AA==
   dependencies:
     "@babel/runtime" "^7.7.6"
-    gatsby-core-utils "^1.0.28"
+    gatsby-core-utils "^1.0.30"
     semver "^5.7.1"
     sharp "^0.23.4"
 
