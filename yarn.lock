@@ -4062,22 +4062,12 @@ core-js@^1.0.0:
   resolved "https://registry.npmjs.org/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
   integrity sha1-ZSKUwUZR2yj6k70tX/KYOk8IxjY=
 
-core-js@^2.4.0, core-js@^2.5.7, core-js@^2.6.5:
-  version "2.6.10"
-  resolved "https://registry.npmjs.org/core-js/-/core-js-2.6.10.tgz#8a5b8391f8cc7013da703411ce5b585706300d7f"
-  integrity sha512-I39t74+4t+zau64EN1fE5v2W31Adtc/REhzWN+gWRRXg6WH5qAsZm62DHpQ1+Yhe4047T55jvzz7MUqF/dBBlA==
-
-core-js@^2.6.11:
+core-js@^2.4.0, core-js@^2.5.7, core-js@^2.6.11, core-js@^2.6.5:
   version "2.6.11"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
   integrity sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
 
-core-js@^3.2.1:
-  version "3.4.1"
-  resolved "https://registry.npmjs.org/core-js/-/core-js-3.4.1.tgz#76dd6828412900ab27c8ce0b22e6114d7ce21b18"
-  integrity sha512-KX/dnuY/J8FtEwbnrzmAjUYgLqtk+cxM86hfG60LGiW3MmltIc2yAmDgBgEkfm0blZhUrdr1Zd84J2Y14mLxzg==
-
-core-js@^3.4.8:
+core-js@^3.2.1, core-js@^3.4.8:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.0.tgz#2b854e451de1967d1e29896025cdc13a2518d9ea"
   integrity sha512-AHPTNKzyB+YwgDWoSOCaid9PUSEF6781vsfiK8qUz62zRR448/XgK2NtCbpiUGizbep8Lrpt0Du19PpGGZvw3Q==
@@ -4476,10 +4466,10 @@ data-uri-to-buffer@1:
   resolved "https://registry.npmjs.org/data-uri-to-buffer/-/data-uri-to-buffer-1.2.0.tgz#77163ea9c20d8641b4707e8f18abdf9a78f34835"
   integrity sha512-vKQ9DTQPN1FLYiiEEOQ6IBGFqvjCa5rSK3cWMy/Nespm5d/x3dGFT9UBZnkLxCwua/IXBi2TYnwTEpsOvhC4UQ==
 
-datocms-client@~3.0.10:
-  version "3.0.14"
-  resolved "https://registry.yarnpkg.com/datocms-client/-/datocms-client-3.0.14.tgz#6b58686f3e8df73b4ec7fc3888ae4051d583d790"
-  integrity sha512-7EWG7iqwZb4BiC+7Y6rSo8083zpRAiPbrOA8wdbaLalbzS7GJttddcSbj+N297UOpeDqV+CS6SV6RSYHxGBlJQ==
+datocms-client@>=3.0.16:
+  version "3.0.16"
+  resolved "https://registry.yarnpkg.com/datocms-client/-/datocms-client-3.0.16.tgz#2623dfd46626bacc3f6b3dcfe3d3dde1fcd50acf"
+  integrity sha512-X82PtiD13q5AhKynCBrC4COIM9pSJ5a5Xw5oTzBe4+b8yRboBrJSdndiBf1r8od0wWKw9kZMyMJx2LP6iom3RQ==
   dependencies:
     "@iarna/toml" "^2.2.3"
     arr-diff "^4.0.0"
@@ -6685,13 +6675,13 @@ gatsby-react-router-scroll@^2.1.21:
     scroll-behavior "^0.9.10"
     warning "^3.0.0"
 
-gatsby-source-datocms@^2.1.23:
-  version "2.1.23"
-  resolved "https://registry.yarnpkg.com/gatsby-source-datocms/-/gatsby-source-datocms-2.1.23.tgz#eb60644ea0fa40d4c6caf9c2f6ae4c67e6a335cb"
-  integrity sha512-zPPxVmZqdD7O4CXkmuKXVEk1tShuzeFBe8jsjsk0kapxkw/Zj5aMUhsVU/Ub+LBw9inkt9dN0obtKFn05H2H+g==
+gatsby-source-datocms@^2.1.28:
+  version "2.1.28"
+  resolved "https://registry.yarnpkg.com/gatsby-source-datocms/-/gatsby-source-datocms-2.1.28.tgz#fb60fc8247d5081af7e3b332225512050020467d"
+  integrity sha512-Ickb67+EbrgeZGQpn1CxzY5M2qDJ/qm5U0DA8mxQhrfwZM3/a5nxVWZCHpGn6XIlvtKXpfCId+q/FR18Skv+MA==
   dependencies:
     core-js "^3.2.1"
-    datocms-client "~3.0.10"
+    datocms-client ">=3.0.16"
     fs-extra ">=8.1.0"
     humps ">=2.0.1"
     imgix-url-params "11.2.0"
@@ -9960,17 +9950,7 @@ object.assign@^4.1.0:
     has-symbols "^1.0.0"
     object-keys "^1.0.11"
 
-object.entries@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/object.entries/-/object.entries-1.1.0.tgz#2024fc6d6ba246aee38bdb0ffd5cfbcf371b7519"
-  integrity sha512-l+H6EQ8qzGRxbkHOd5I/aHRhHDKoQXQ8g0BYt4uSweQU1/J6dZUOyWh9a2Vky35YCKjzmgxOzta2hH6kf9HuXA==
-  dependencies:
-    define-properties "^1.1.3"
-    es-abstract "^1.12.0"
-    function-bind "^1.1.1"
-    has "^1.0.3"
-
-object.entries@^1.1.1:
+object.entries@^1.1.0, object.entries@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/object.entries/-/object.entries-1.1.1.tgz#ee1cf04153de02bb093fec33683900f57ce5399b"
   integrity sha512-ilqR7BgdyZetJutmDPfXCDffGa0/Yzl2ivVNpbx/g4UeWrCdRnFDUBrKJGLhGieRHDATnyZXWBeCb29k9CJysQ==
