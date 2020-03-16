@@ -6,7 +6,7 @@
   "author": "Chase Ohlson <chase@chaseohlson.com>",
   "dependencies": {
     "gatsby": "^2.19.12",
-    "gatsby-image": "^2.2.40",
+    "gatsby-image": "^2.2.44",
     "gatsby-plugin-anchor-links": "^1.0.11",
     "gatsby-plugin-canonical-urls": "^2.1.20",
     "gatsby-plugin-google-analytics": "^2.1.35",
