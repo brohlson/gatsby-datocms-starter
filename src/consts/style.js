@@ -1,7 +1,7 @@
 /* eslint-disable quotes */
 import bp from './breakpoints';
 
-const mq = {
+const mQueryPoint = {
   mobile: `${bp.mobile}px`,
   tabletSmall: `${bp.tabletSmall}px`,
   tablet: `${bp.tablet}px`,
@@ -16,7 +16,7 @@ export const font = {
   h1: `
         font-size: 5rem;
         font-weight: 900;
-        @media screen and (max-width: ${mq.tablet}) {
+        @media screen and (max-width: ${mQueryPoint.tablet}) {
             font-size: 4rem;
         }
     `,
@@ -36,4 +36,32 @@ export const z = {
   modal: `z-index: 200000;`,
 };
 
-export const duration = 500;
+import { css } from 'styled-components';
+
+// Creates up & down media queries for your breakpoints
+// *** Usage ***
+// import { mq } from "**/style.js"
+// export const StyledComponent = styled.div`
+// ${media.tablet`
+//   display: flex;
+// `}
+// ${media.mobile_up`
+//   display: none;
+// `}
+//`
+
+export const mq = Object.keys(bp).reduce((acc, label) => {
+  acc[label] = (...args) => css`
+    @media screen and (max-width: ${bp[label]}px) {
+      ${css(...args)};
+    }
+  `;
+
+  acc[`${label}_up`] = (...args) => css`
+    @media screen and (min-width: ${bp[label]}px) {
+      ${css(...args)};
+    }
+  `;
+
+  return acc;
+}, {});
