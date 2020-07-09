@@ -44,7 +44,7 @@
     "eslint-plugin-react": "^7.18.3",
     "gatsby-plugin-eslint": "^2.0.3",
     "http-proxy-middleware": "^1.0.3",
-    "husky": "^4.2.3",
+    "husky": "^4.2.5",
     "mailgun-js": "^0.22.0",
     "netlify-lambda": "^1.6.3",
     "prettier": "^1.18.2"
