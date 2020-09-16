@@ -47,7 +47,7 @@
     "husky": "^4.2.3",
     "mailgun-js": "^0.22.0",
     "netlify-lambda": "^1.6.3",
-    "prettier": "^1.18.2"
+    "prettier": "^2.1.2"
   },
   "keywords": [
     "gatsby"
