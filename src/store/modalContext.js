@@ -10,7 +10,7 @@ const ModalContext = React.createContext(defaultState);
 const ModalProvider = ({ children }) => {
   const [open, setOpen] = useState(defaultState.open);
   const closeModal = () => setOpen(null);
-  const openModal = m => setOpen(m);
+  const openModal = (m) => setOpen(m);
 
   return (
     <ModalContext.Provider

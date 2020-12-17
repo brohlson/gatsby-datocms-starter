@@ -42,7 +42,7 @@ export default function Blog() {
       <PageWrapper>
         <PageInner>
           <PageTitle>{title}</PageTitle>
-          {_map(edges, post => (
+          {_map(edges, (post) => (
             <PostLink key={post.node.id}>
               <Link to={`/blog/${post.node.slug}/`}>{post.node.title}</Link>
             </PostLink>
