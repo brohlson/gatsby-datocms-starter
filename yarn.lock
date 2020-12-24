@@ -14039,10 +14039,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-inter@^3.12.0:
-  version "3.15.0"
-  resolved "https://registry.yarnpkg.com/typeface-inter/-/typeface-inter-3.15.0.tgz#7ac09c0bcc5fdd5c5b85727df6478ee287f56deb"
-  integrity sha512-kWLJsvqSJTBKilu1HsBYHwi3usFg8JQ9I9u+bcU2kOkIi48fOZy8sYacbFmlJ9EHRVNqqvM4zeI73WCSKNMOuQ==
+typeface-inter@^3.15.1:
+  version "3.15.1"
+  resolved "https://registry.yarnpkg.com/typeface-inter/-/typeface-inter-3.15.1.tgz#bbd39cc26ed1c7b3a2bc797996a9d053b507e727"
+  integrity sha512-xlEvjfaTvFnr3ZmwM6fs5/KOKLpAuNksAUxiYfa6dKqZham2oTGm0gI1j/tcgxh1reihhrKbTFfFjtCV9wwxXA==
 
 unbzip2-stream@^1.0.9:
   version "1.4.3"
