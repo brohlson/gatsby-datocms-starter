@@ -6652,10 +6652,10 @@ gatsby-cli@^3.0.0:
     yoga-layout-prebuilt "^1.9.6"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-2.0.0.tgz#00fdc1f2efcaabe7426e63b020a7117ca613780c"
-  integrity sha512-+DrClKZ/ScTbzhIHZXuU3DoIhEJ95uJV+swR7VVqYVhEpV1CnjUGR/dB+tMd0VqlPdrXB38FuR8O5kuSvYm+/A==
+gatsby-core-utils@^2.0.0, gatsby-core-utils@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-2.2.0.tgz#def804d0fc2acde605c5d4da3c1ffbfc9aaf4e2a"
+  integrity sha512-7T6aVJAj0u/VUg+zKOLuxyZLS/8KDQcDeEFCkKY0d7Pd4wV/QqKRLljr0TRVkivRZHXyWQI9fM3ox5DzfkHdCQ==
   dependencies:
     ci-info "2.0.0"
     configstore "^5.0.1"
@@ -6763,14 +6763,14 @@ gatsby-plugin-layout@^2.0.0:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-gatsby-plugin-manifest@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-3.0.0.tgz#4d5a7933bd2c539f9d35307812c4903e4c34b107"
-  integrity sha512-xmnppsXR0+CTQZhEmvcrbbV6rvOgO5ybE6Ywwv0bosSJxML3oBoo+kC8HCwK097Ppofgd1inSwNbJ5FB8wdNbQ==
+gatsby-plugin-manifest@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-3.2.0.tgz#512938442542f95ffc8e0cbe5df19db719e935d9"
+  integrity sha512-oU5pvAHZ+qIhCbmTP5Eti73i6pgAnxF/nfwXCSQ7zUjFWzKkjW8tHYK3XmhEYX2ooUX2WeP9e3vp2QdnlmA59Q==
   dependencies:
     "@babel/runtime" "^7.12.5"
-    gatsby-core-utils "^2.0.0"
-    gatsby-plugin-utils "^1.0.0"
+    gatsby-core-utils "^2.2.0"
+    gatsby-plugin-utils "^1.2.0"
     semver "^7.3.2"
     sharp "^0.27.0"
 
@@ -6860,10 +6860,10 @@ gatsby-plugin-typescript@^3.0.0:
     "@babel/runtime" "^7.12.5"
     babel-plugin-remove-graphql-queries "^3.0.0"
 
-gatsby-plugin-utils@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-1.0.0.tgz#1733a1a9c1704ddedbcf490684f590c7d1ddbe7e"
-  integrity sha512-Z7Yi/y03aObiQ8kkMQGpE5lkIN7GKLfXSDlmriuzU0g7XPUUBwuWQPFVG/hSb4f30KWJ1icBe+Ropivu17rURw==
+gatsby-plugin-utils@^1.0.0, gatsby-plugin-utils@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-1.2.0.tgz#4751d952c9c99f15d4a68497cd1841a90aec6c33"
+  integrity sha512-9+kKeyQdXJtQ/9pthfP4LTiem7coOdBt+8wRTwa+DF331qfzunjekl0uWlZSZBnQpG1uS7GX4R/4tei72cVVmw==
   dependencies:
     joi "^17.2.1"
 
