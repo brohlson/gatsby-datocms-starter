@@ -36,7 +36,7 @@
     "babel-plugin-styled-components": "^1.10.7",
     "directory-named-webpack-plugin": "^4.0.0",
     "dotenv": "^8.1.0",
-    "eslint": "^7.21.0",
+    "eslint": "^7.25.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-import": "^2.20.1",
