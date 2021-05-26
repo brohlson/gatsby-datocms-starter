@@ -19,7 +19,7 @@
     "gatsby-plugin-sitemap": "^3.0.0",
     "gatsby-plugin-styled-components": "^4.0.0",
     "gatsby-source-datocms": "^2.5.17",
-    "gatsby-source-filesystem": "^3.0.0",
+    "gatsby-source-filesystem": "^3.6.0",
     "gatsby-transformer-sharp": "^3.0.0",
     "lodash": "^4.17.21",
     "path": "^0.12.7",
