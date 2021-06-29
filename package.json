@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "author": "Chase Ohlson <chase@chaseohlson.com>",
   "dependencies": {
-    "gatsby": "^3.0.3",
+    "gatsby": "^3.8.1",
     "gatsby-image": "^3.0.0",
     "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-canonical-urls": "^3.0.0",
